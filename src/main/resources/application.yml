@@ -1,8 +1,21 @@
-# 应用服务 WEB 访问端口
-server.port=8080
-#下面这些内容是为了让MyBatis映射
-#指定Mybatis的Mapper文件
-mybatis.mapper-locations=classpath:mappers/*xml
-#指定Mybatis的实体目录
-mybatis.type-aliases-package=com.tatakai.parrotojbackend.mybatis.entity
+server:
+  port: 8080
+mybatis:
+  mapper-locations: classpath:mappers/*xml
+  type-aliases-package: com.example.parrot.mybatis.entity
+  configuration:
+    map-underscore-to-camel-case: false
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/oj
+    username: root
+    password: 1234
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+knife4j:
+  enable: true
+mybatis-plus:
+  configuration:
+    map-underscore-to-camel-case: false
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
 

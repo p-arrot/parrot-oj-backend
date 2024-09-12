@@ -1,4 +1,4 @@
-package com.example.parrot.result;
+package com.tatakai.parrotojbackend.result;
 
 import lombok.Data;
 

@@ -1,7 +1,6 @@
-package com.example.parrot.annotation;
+package com.tatakai.parrotojbackend.annotation;
 
-import com.example.parrot.model.enums.AuthEnum;
-
+import com.tatakai.parrotojbackend.enums.AuthEnum;
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;

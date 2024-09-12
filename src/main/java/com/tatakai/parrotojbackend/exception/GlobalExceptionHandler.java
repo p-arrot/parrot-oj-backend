@@ -1,8 +1,9 @@
-package com.example.parrot.exception;
+package com.tatakai.parrotojbackend.exception;
 
-import com.example.parrot.result.BaseResponse;
-import com.example.parrot.result.ErrorCode;
-import com.example.parrot.result.ResultUtil;
+
+import com.tatakai.parrotojbackend.result.BaseResponse;
+import com.tatakai.parrotojbackend.result.ErrorCode;
+import com.tatakai.parrotojbackend.result.ResultUtil;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.RestControllerAdvice;

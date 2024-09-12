@@ -1,4 +1,6 @@
-package com.example.parrot.result;
+package com.tatakai.parrotojbackend.result;
+
+import lombok.Getter;
 
 public enum ErrorCode {
     SUCCESS(0, "ok"),
@@ -10,16 +12,13 @@ public enum ErrorCode {
     SYSTEM_ERROR(50000, "系统内部异常"),
     OPERATION_ERROR(50001, "操作失败"),
     CODESANDBOX_ERROR(50010, "沙箱操作失败");
+    @Getter
     private final int code;
     private final String msg;
 
     ErrorCode(int code, String msg) {
         this.code = code;
         this.msg = msg;
-    }
-
-    public int getCode() {
-        return code;
     }
 
     public String getMessage() {

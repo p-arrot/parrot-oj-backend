@@ -1,7 +1,10 @@
-package com.example.parrot.exception;
+package com.tatakai.parrotojbackend.exception;
 
-import com.example.parrot.result.ErrorCode;
 
+import com.tatakai.parrotojbackend.result.ErrorCode;
+import lombok.Getter;
+
+@Getter
 public class BusinessException extends RuntimeException {
     private final int code;
 
@@ -17,7 +20,4 @@ public class BusinessException extends RuntimeException {
         this(errorCode.getCode(), msg);
     }
 
-    public int getCode() {
-        return code;
-    }
 }
