@@ -1,4 +1,4 @@
-package com.example.parrot.common;
+package com.tatakai.parrotojbackend.common;
 
 import lombok.Data;
 

@@ -1,6 +1,4 @@
-package com.example.parrot.result;
-
-import com.fasterxml.jackson.databind.ser.Serializers;
+package com.tatakai.parrotojbackend.result;
 
 public class ResultUtil {
     /**
