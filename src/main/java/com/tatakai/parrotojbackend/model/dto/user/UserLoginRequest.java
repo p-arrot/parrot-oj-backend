@@ -1,4 +1,4 @@
-package com.tatakai.parrotojbackend.model.dto;
+package com.tatakai.parrotojbackend.model.dto.user;
 
 import lombok.Data;
 

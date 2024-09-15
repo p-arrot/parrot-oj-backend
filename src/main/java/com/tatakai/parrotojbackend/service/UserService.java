@@ -3,7 +3,8 @@ package com.tatakai.parrotojbackend.service;
 
 import com.baomidou.mybatisplus.extension.service.IService;
 import com.tatakai.parrotojbackend.model.domain.User;
-import com.tatakai.parrotojbackend.model.vo.LoginUserVO;
+import com.tatakai.parrotojbackend.model.vo.user.LoginUserVO;
+import com.tatakai.parrotojbackend.model.vo.user.UserVO;
 
 import javax.servlet.http.HttpServletRequest;
 
@@ -18,4 +19,7 @@ public interface UserService extends IService<User> {
     User getLoginUser(HttpServletRequest request);
     Boolean userLogout(HttpServletRequest request);
 
+    UserVO getUserVO(User user);
+
+    boolean isAdmin(User loginUser);
 }

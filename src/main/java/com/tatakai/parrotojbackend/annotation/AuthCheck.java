@@ -1,6 +1,6 @@
 package com.tatakai.parrotojbackend.annotation;
 
-import com.tatakai.parrotojbackend.enums.AuthEnum;
+import com.tatakai.parrotojbackend.model.enums.AuthEnum;
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;

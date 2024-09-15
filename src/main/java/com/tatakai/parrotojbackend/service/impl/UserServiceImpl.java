@@ -6,7 +6,9 @@ import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.tatakai.parrotojbackend.exception.BusinessException;
 import com.tatakai.parrotojbackend.mapper.UserMapper;
 import com.tatakai.parrotojbackend.model.domain.User;
-import com.tatakai.parrotojbackend.model.vo.LoginUserVO;
+import com.tatakai.parrotojbackend.model.enums.AuthEnum;
+import com.tatakai.parrotojbackend.model.vo.user.LoginUserVO;
+import com.tatakai.parrotojbackend.model.vo.user.UserVO;
 import com.tatakai.parrotojbackend.result.ErrorCode;
 import com.tatakai.parrotojbackend.service.UserService;
 import lombok.extern.slf4j.Slf4j;
@@ -97,6 +99,18 @@ public class UserServiceImpl extends ServiceImpl<UserMapper, User>
         if(user==null) throw new BusinessException(ErrorCode.OPERATION_ERROR,"未登录！");
         request.getSession().removeAttribute(LOGIN_USER);
         return true;
+    }
+
+    @Override
+    public UserVO getUserVO(User user) {
+        UserVO userVO = new UserVO();
+        BeanUtils.copyProperties(user, userVO);
+        return userVO;
+    }
+
+    @Override
+    public boolean isAdmin(User loginUser) {
+        return AuthEnum.ADMIN.getValue().equals(loginUser.getUserRole());
     }
 
 

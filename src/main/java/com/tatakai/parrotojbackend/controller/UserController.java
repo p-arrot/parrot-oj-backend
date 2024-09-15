@@ -4,9 +4,9 @@ package com.tatakai.parrotojbackend.controller;
 
 import com.tatakai.parrotojbackend.exception.BusinessException;
 import com.tatakai.parrotojbackend.model.domain.User;
-import com.tatakai.parrotojbackend.model.dto.UserLoginRequest;
-import com.tatakai.parrotojbackend.model.dto.UserRegisterRequest;
-import com.tatakai.parrotojbackend.model.vo.LoginUserVO;
+import com.tatakai.parrotojbackend.model.dto.user.UserLoginRequest;
+import com.tatakai.parrotojbackend.model.dto.user.UserRegisterRequest;
+import com.tatakai.parrotojbackend.model.vo.user.LoginUserVO;
 import com.tatakai.parrotojbackend.result.BaseResponse;
 import com.tatakai.parrotojbackend.result.ErrorCode;
 import com.tatakai.parrotojbackend.result.ResultUtil;

@@ -1,4 +1,4 @@
-package com.tatakai.parrotojbackend.model.vo;
+package com.tatakai.parrotojbackend.model.vo.user;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
